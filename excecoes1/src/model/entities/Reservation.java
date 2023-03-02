@@ -1,6 +1,7 @@
 package model.entities;
 
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 public class Reservation {
 
@@ -30,6 +31,10 @@ public class Reservation {
 		return checkOut;
 	}
 
+	public long duration() {
+		long diff = checkOut.getTime() - checkIn.getTime();
+		return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
+	}
 	
 	
 	
