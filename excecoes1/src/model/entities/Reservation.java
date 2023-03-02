@@ -5,13 +5,13 @@ import java.util.Date;
 public class Reservation {
 
 	private Integer roomNumber;
-	private Date checkin;
-	private Date checkout;
+	private Date checkIn;
+	private Date checkOut;
 	
 	public Reservation(Integer roomNumber, Date checkin, Date checkout) {
 		this.roomNumber = roomNumber;
-		this.checkin = checkin;
-		this.checkout = checkout;
+		this.checkIn = checkin;
+		this.checkOut = checkout;
 	}
 
 	public Integer getRoomNumber() {
@@ -22,12 +22,12 @@ public class Reservation {
 		this.roomNumber = roomNumber;
 	}
 
-	public Date getCheckin() {
-		return checkin;
+	public Date getCheckIn() {
+		return checkIn;
 	}
 
-	public Date getCheckout() {
-		return checkout;
+	public Date getCheckOut() {
+		return checkOut;
 	}
 
 	
